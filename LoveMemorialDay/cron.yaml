@@ -1,0 +1,4 @@
+cron:
+- description: daily tweet
+  url: /
+  schedule: every day 00:00

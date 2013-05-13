@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<!--This site is based on jsdo.it HTML5 fireworks http://jsdo.it/event/html5hanabi and modified by Calvin for his girlfriend to celebrate the 2012 new year. All rights of imges and codes are reserved by jsdo.it.`-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>老婆，新年快乐！</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/common.css" />
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/sh_acid.min.css" /> 
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/jquery-ui-1.8.1.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/ace.css" />
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/codemirror.css" />
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/svggirl.css" />
+<link href="css/widescreen.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 911px)" >
+<link rel="stylesheet" type="text/css" media="screen,print" href="css/html5hanabi.css" />
+<script type="text/javascript" src="js/header.js"></script>
+</head>
+
+<body>
+<article id="html5hanabi" class="english">
+<header>
+</header>
+
+<div id="hanabiArea">
+<div id="hanabiCanvas">
+
+<div id="eventTitle">
+<h1><img src="css/img/fireworks.jpg" alt="Fireworks"></h1>
+<p class="note">To 丽丽：<br />即使我们不在伦敦，同样能看到新年的焰火。<br />但有一点不同的是，这里的焰火，只为你而绽放。<br />——老公</p>
+<p id="btnStart" class="btnBase">让我们一起看焰火吧！</p>
+</div>
+
+<!-- / #hanabiCanvas --></div>
+
+<div id="boxAbout">
+<p class="note" style="padding:0 10px;">也许这里的焰火不及泰晤士河上空的绚丽，<br />也许这里没有拥挤的人群缺少热闹的气氛，<br />也许无法在伦敦度过跟你在一起的第一个新年有点遗憾，<br />但我要你知道，<br />我对你的爱并不会因此而减少。<br /><br />老婆，祝你新年快乐！</p>
+<p id="aboutClose"><span class="button"><img src="css/img/btn_close.png" class="btn"></span></p>
+</div>
+
+<div id="sky"></div>
+<div id="edge"></div>
+<audio id="bgm" autobuffer autoplay loop preload>
+<source src="HappyNewYear.mp3" />
+</audio>
+<p id="muteController" class="on" onClick="tglmute();">BGM: <span class="on">on</span> / <span class="off">off</span></p>
+<!-- / #hanabiArea --></div>
+
+<textarea id="scene1" data-sec="4000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/washinokantoku/11OB" width="100%" height="750"></iframe><a href="http://jsdo.it/washinokantoku/11OB" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene2" data-sec="3000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/lifE" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/lifE" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene3" data-sec="4000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/demouth/uEFu" width="450" height="450"></iframe><a href="http://jsdo.it/demouth/uEFu" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/xyshinz/vfBl" width="450" height="450"></iframe><a href="http://jsdo.it/xyshinz/vfBl" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene4" data-sec="4000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/demouth/gDZy" width="100%" height="750"></iframe><a href="http://jsdo.it/demouth/gDZy" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene5" data-sec="4000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/sGOS" width="450" height="450"></iframe><a href="http://jsdo.it/norahiko/sGOS" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/demouth/iRtI" width="450" height="450"></iframe><a href="http://jsdo.it/demouth/iRtI" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene6" data-sec="12000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/shunito/niagara" width="100%" height="750"></iframe><a href="http://jsdo.it/shunito/niagara" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene7" data-sec="10000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/t02uk/u8n0" width="100%" height="750"></iframe><a href="http://jsdo.it/t02uk/u8n0" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene8" data-sec="5000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/toytoy20/zBwx" width="100%" height="750"></iframe><a href="http://jsdo.it/toytoy20/zBwx" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene9" data-sec="2500">
+<div class="layout3">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/c5h12/btIy" width="450" height="450"></iframe><a href="http://jsdo.it/c5h12/btIy" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/hanabeen/8woB" width="450" height="450"></iframe><a href="http://jsdo.it/hanabeen/8woB" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene10" data-sec="4000">
+<div class="layout1">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/zarkswerk/hikisakiaobeni" width="100%" height="750"></iframe><a href="http://jsdo.it/zarkswerk/hikisakiaobeni" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene11" data-sec="4000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/Okada.Yusuke/nAGg" width="100%" height="750"></iframe><a href="http://jsdo.it/Okada.Yusuke/nAGg" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene12" data-sec="4000">
+<div class="layout1">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/mrhdms/tlJO" width="100%" height="750"></iframe><a href="http://jsdo.it/mrhdms/tlJO" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene13" data-sec="7000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/sylvain.pollet.villard/7eAa" width="100%" height="750"></iframe><a href="http://jsdo.it/sylvain.pollet.villard/7eAa" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene14" data-sec="4000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/toshiosato/pkWZ" width="100%" height="750"></iframe><a href="http://jsdo.it/toshiosato/pkWZ" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene15" data-sec="3000">
+<div class="layout4 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/52q3" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/52q3" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/norahiko/8srA" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/8srA" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene16" data-sec="4000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/nsPr" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/nsPr" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene17" data-sec="4000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/kazuble/fOZu" width="450" height="450"></iframe><a href="http://jsdo.it/kazuble/fOZu" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/hority/aAzs" width="450" height="450"></iframe><a href="http://jsdo.it/hority/aAzs" class="external" target="_blank"></a></div>
+</a></div>
+</textarea>
+
+<textarea id="scene18" data-sec="16000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/Ftp23/oAIl" width="100%" height="750"></iframe><a href="http://jsdo.it/Ftp23/oAIl" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene19" data-sec="4000">
+<div class="layout4">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/sassy_watson/qg6G" width="450" height="450"></iframe><a href="http://jsdo.it/sassy_watson/qg6G" class="external" target="_blank"></a></div>
+</div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/norahiko/ls6x" width="450" height="450"></iframe><a href="http://jsdo.it/norahiko/ls6x" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene20" data-sec="4000">
+<div class="layout3 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/pypupypa/hanabi01" width="100%" height="750"></iframe><a href="http://jsdo.it/pypupypa/hanabi01" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/stms/mb6e" width="450" height="450"></iframe><a href="http://jsdo.it/stms/mb6e" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene21" data-sec="4000">
+<div class="layout1">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/gXv8" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/gXv8" class="external" target="_blank"></a></div>
+</textarea>
+
+<textarea id="scene22" data-sec="7000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/shunito/mAxx" width="450" height="450"></iframe><a href="http://jsdo.it/shunito/mAxx" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/eller86/yqS9" width="450" height="450"></iframe><a href="http://jsdo.it/eller86/yqS9" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene23" data-sec="2500">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/Masashi.Hige/xH7o" width="100%" height="750"></iframe><a href="http://jsdo.it/Masashi.Hige/xH7o" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene24" data-sec="4000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/shunito/gq26" width="450" height="450"></iframe><a href="http://jsdo.it/shunito/gq26" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/tabi_kuroneko/kqBL" width="450" height="450"></iframe><a href="http://jsdo.it/tabi_kuroneko/kqBL" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene25" data-sec="4000">
+<div class="layout1">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/satsan/s8wF" width="100%" height="750"></iframe><a href="http://jsdo.it/satsan/s8wF" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene26" data-sec="6000">
+<div class="layout1 size750">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/zaftzaft7/354z" width="100%" height="750"></iframe><a href="http://jsdo.it/zaftzaft7/354z" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene27" data-sec="4000">
+<div class="layout2">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/suffocair/mks1" width="450" height="450"></iframe><a href="http://jsdo.it/suffocair/mks1" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/qqq/fiCS" width="450" height="450"></iframe><a href="http://jsdo.it/qqq/fiCS" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene28" data-sec="4000">
+<div class="layout4">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/shiro96/gO7M" width="450" height="450"></iframe><a href="http://jsdo.it/shiro96/gO7M" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/c5h12/87qa" width="450" height="450"></iframe><a href="http://jsdo.it/c5h12/87qa" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene29" data-sec="4000">
+<div class="layout1">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/norahiko/fuuX" width="100%" height="750"></iframe><a href="http://jsdo.it/norahiko/fuuX" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<textarea id="scene30" data-sec="4000">
+<div class="layout4">
+<div class="fw1 hanabiItem"><iframe src="http://jsrun.it/mksweb/6o26" width="450" height="450"></iframe><a href="http://jsdo.it/mksweb/6o26" class="external" target="_blank"></a></div>
+<div class="fw2 hanabiItem"><iframe src="http://jsrun.it/Satoru.Noguchi/cAYh" width="450" height="450"></iframe><a href="http://jsdo.it/Satoru.Noguchi/cAYh" class="external" target="_blank"></a></div>
+</div>
+</textarea>
+
+<!-- / #html5hanabi --></article>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/lib.js?1323426967"></script>
+<script type="text/javascript" src="js/codemirror.js?1323426967"></script>
+<script type="text/javascript" src="js/ace.min.js?1323426967"></script>
+<script type="text/javascript" src="js/meca.js?1283829293"></script>
+<script type="text/javascript" src="js/do.js?1323426967"></script>
+<script type="text/javascript" src="js/pushNotification.js?1323426967"></script><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script><script type="text/javascript" src="js/html5hanabi.js?1323426967"></script></body>
+</html>
+

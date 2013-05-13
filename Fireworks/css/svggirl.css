@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*
+##### jsdoit #####
+Copyright (C) KAYAC Inc. All Rights Reserved.
+*/
+
+/* --------------------------------------------------
+1. HTML, Body, Anchor
+-------------------------------------------------- */
+body.svgGirl{
+	background: url(/img/event/svggirl/bg_body_01.gif) 50% 50px repeat-x;
+}
+
+body.svgGirl #content{
+	border: none;
+}
+
+/* introSVGgirl
+----------------------------------- */
+#introSVGgirl{
+	background: url(/img/event/svggirl/img_top_01.jpg) 0 0 no-repeat;
+	width: 950px;
+	height: 323px;
+	position: relative;
+	z-index: 1;
+}
+
+#introSVGgirl > h1{
+	position: absolute;
+	z-index: 1;
+	top: 43px;
+	left: 35px;
+}
+
+#introSVGgirl .lead{
+	position: absolute;
+	line-height: 1.75;
+	top: 142px;
+	left: 37px;
+	z-index: 1;
+}
+
+#introSVGgirl .gotoEvent{
+	position: absolute;
+	z-index: 1;
+	top: 225px;
+	left: 37px;
+}
+
+#introSVGgirl .changeNormal{
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	right: 5px;
+}
+
+/* --------------------------------------------------
+2. contents
+-------------------------------------------------- */
+

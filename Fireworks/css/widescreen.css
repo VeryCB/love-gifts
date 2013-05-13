@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* ----------------------------------------------
+
+	Wonderfl / wide screen STYLE
+	author   : (C)KAYAC http://www.kayac.com/
+
+---------------------------------------------- */
+
+
+/* ----------------------------------------------
+
+ Container
+
+---------------------------------------------- */
+@media screen and (min-width: 1300px) {
+
+.layoutContainer.layoutLiquid{
+	width: 1230px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.layoutLiquid #main{
+	width: 980px;
+}
+
+.layoutLiquid #main .unitCodeGroup{
+	width: 1030px;
+}
+
+#boxHomeHotCode .unitCodeGroup .unitCode:nth-child(4),
+#boxHomeCodeRankingCSS3 .unitCodeGroup .unitCode:nth-child(4){
+	display: block;
+}
+
+.unitCodeGroup.col4 .unitCode:nth-child(4n) {
+		margin-right: 33px;
+}
+
+.unitCodeGroup.col4 .unitCode:nth-child(5n) {
+		margin-right: 0;
+}
+
+.layoutLiquid .unitQa {
+	width: 412px;
+}
+
+.layoutLiquid .listRankingUser.col2{
+	width: 465px;
+}
+
+.blockTourIntro .layoutLiquid > .body{
+	width: 580px;
+}
+
+
+}

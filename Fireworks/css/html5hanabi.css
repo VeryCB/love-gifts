@@ -1,0 +1,895 @@
+@charset "UTF-8";
+
+/*
+##### jsdoit #####
+Copyright (C) KAYAC Inc. All Rights Reserved.
+
+/* //////////////////////////////////////////////////
+[Base] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	0. Resetting default margin and padding
+-------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, p, blockquote, th, td, form, fieldset, legend, article, section, aside, header, footer, nav {
+	margin: 0;
+	padding: 0;
+}
+article, section, aside, header, footer, nav {
+	display: block;
+}
+
+
+/* --------------------------------------------------
+	1. HTML, Body, Anchor
+-------------------------------------------------- */
+html{
+	height: 100%;
+}
+body {
+	font-family: Myriad, Helvetica, Arial, "Meiryo", "メイリオ", sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+	text-align: left;
+	background: #000;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	min-height: 660px;
+	min-width:  950px;
+}
+
+/* for IE6 */
+* html body {
+	font-size: 82%;
+}
+
+/* for IE7 */
+*:first-child+html body {
+	font-size: 82%;
+}
+
+a:link {
+	color: #C00;
+	text-decoration: none;
+}
+a:visited {
+	color: #C66;
+	text-decoration: none;
+}
+a:hover,
+a:active  {
+	text-decoration: underline;
+}
+.user a:link {
+	color: #F00;
+}
+
+/* --------------------------------------------------
+	2. Heading, Paragraph
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	line-height: 1.2;
+}
+
+/* p {} */
+
+img{
+	border: none;
+}
+
+/* --------------------------------------------------
+	3. List
+-------------------------------------------------- */
+li { list-style: none; }
+
+
+/* --------------------------------------------------
+	4. Table
+-------------------------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+	font-family: inherit;
+}
+caption, th, td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+/* --------------------------------------------------
+	5. Form
+-------------------------------------------------- */
+fieldset { border: none; }
+
+input, textarea, select, label {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: middle;
+}
+input[type="text"] {
+	padding: 2px 3px;
+	border: none;
+	background: #E4E4E4;
+}
+input[type="text"]:focus {
+	background: #F0F0F0;
+}
+.input-prompt {
+	color: #999;
+}
+input[type="image"],
+input[type="reset"],
+input[type="submit"],
+input[type="search"] {
+	-webkit-appearance: none;
+}
+textarea {
+	padding: 2px 3px;
+	border: none;
+	background: #E4E4E4;
+}
+textarea:focus {
+	background: #F0F0F0;
+}
+label { cursor: pointer; }
+
+textarea { overflow: auto; }
+input.textL {
+	width: 540px;
+}
+textarea.textL {
+	width: 540px;
+	height: 120px;
+}
+
+/* --------------------------------------------------
+1. HTML, Body, Anchor
+-------------------------------------------------- */
+
+body {
+}
+
+#html5hanabi #bgLayor1{
+	background: url(img/bg_gradient_01.png) 0 100% repeat-x;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#html5hanabi #bgLayor2{
+	background: url(img/bg_town_01.png) 50% 100% repeat-x;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.btnBase{
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 50px;
+	cursor: pointer;
+	text-shadow: 0 1px 1px rgba(0,0,0,.8);
+	border-radius: 15px;
+	box-shadow: 0 1px 0 #4d86a0 inset;
+	-moz-box-shadow: 0 1px 0 #4d86a0 inset;
+	-webkit-box-shadow: 0 1px 0 #4d86a0 inset;
+	-moz-border-radius: 4px;
+	line-height: 1.4;
+	color: #fff;
+	background-color: #4d86a0;
+	background-image: linear-gradient(
+		center top,
+		#0a374c 0%,
+		#031a28 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #0a374c),
+		color-stop(1, #031a28)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#0a374c 0%,
+		#031a28 100%
+	);
+}
+
+.btnBase:hover{
+	background-image: linear-gradient(
+		center top,
+		#235871 0%,
+		#0a374e 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #235871),
+		color-stop(1, #0a374e)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#235871 0%,
+		#0a374e 100%
+	);
+}
+
+/* --------------------------------------------------
+2. contents
+-------------------------------------------------- */
+#html5hanabi{
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	text-align: center;
+}
+
+#html5hanabi > header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	text-align: left;
+	padding: 10px 10px 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,.8);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#html5hanabi > header .presents{
+	font-size: 11px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+	top: -4px;
+}
+
+#html5hanabi > header .presents img{
+	vertical-align: middle;
+}
+
+#html5hanabi > header .presents a{
+	color: #fff;
+	line-height: 30px;
+}
+
+#html5hanabi > header .presents .logo{
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#html5hanabi > header #gNav{
+	position: absolute;
+	top: 16px;
+	left: 230px;
+}
+
+#html5hanabi > header #gNav li{
+	float: left;
+	margin-right: 6px;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 1;
+}
+
+#html5hanabi > header #gNav li a{
+	color: #fff;
+}
+
+#html5hanabi > header #gNav li span,
+#html5hanabi > header #gNav li a{
+	padding: 4px 5px;
+	color: #bbb;
+}
+
+#html5hanabi > header #gNav li span:hover,
+#html5hanabi > header #gNav li a:hover {
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+}
+
+#html5hanabi > header #gNav li.joinus a {
+	background: url(img/ico_joinus.png) 0 50% no-repeat #000;
+	padding-left: 20px;
+}
+
+#html5hanabi > header .socialFeedback{
+	float: right;
+	opacity: .5;
+  -webkit-animation-duration: .12s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: fadeIn2back;
+}
+
+#html5hanabi > header:hover .socialFeedback{
+  -webkit-animation-duration: .12s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: fadeIn2;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeIn2 {
+  0%{
+	  opacity: .5;
+    }
+  100% {
+	  opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn2back {
+  0%{
+	  opacity: 1;
+    }
+  100% {
+	  opacity: .5;
+  }
+}
+
+#html5hanabi > header .socialFeedback li{
+	float: left;
+}
+
+#html5hanabi > header .socialFeedback li.stumbleupon,
+#html5hanabi > header .socialFeedback li.hatebu{
+	margin-right: 10px;
+}
+
+#html5hanabi #layoutIntro{
+	position: relative;
+	top: 4%;
+	vertical-align: middle;
+	z-index: 2;
+	width: 511px;
+	min-height: 520px;
+	text-align: center;
+	margin: 0 auto;
+	background: url(img/bg_firework_01.png) 50% 0 no-repeat;
+	text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+#html5hanabi #layoutIntro h1{
+	width: 511px;
+	padding-top: 90px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#html5hanabi #layoutIntro .nav {
+	display: table;
+	width: 80%;
+	margin: 0 auto 17px;
+}
+
+#html5hanabi #layoutIntro ul {
+	display: table-row;
+}
+
+#html5hanabi #layoutIntro ul li{
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+	height: 75px;
+}
+
+#html5hanabi #layoutIntro ul li a{
+	display: table-cell;
+	vertical-align: middle;
+	height: 75px;
+	width: 253px;
+	color: #fff;
+}
+
+#html5hanabi #layoutIntro ul li a{
+	font-size: 20px;
+}
+
+#html5hanabi.english #layoutIntro ul li a{
+	font-size: 16px;
+}
+
+#html5hanabi #layoutIntro ul li.enter{
+	font-size: 20px;
+	color: #fff;
+	width: 205px;
+	text-align: center;
+	line-height: 1;
+}
+
+#html5hanabi.english #layoutIntro ul li.enter{
+	font-size: 16px;
+}
+
+#html5hanabi #layoutIntro ul li a{
+	border-radius: 13px 0 0 13px;
+	border-top: 1px solid rgba(255,255,255,.75);
+	border-right: 1px solid #004058;
+	border-bottom: 1px solid #004058;
+	border-left: 1px solid #004058;
+	background-color: #0f93bd;
+	background-image: linear-gradient(
+		center top,
+		#03bde5 0%,
+		#1e5f8c 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #03bde5),
+		color-stop(1, #1e5f8c)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#03bde5 0%,
+		#1e5f8c 100%
+	);
+}
+
+#html5hanabi #layoutIntro ul li a:hover{
+	text-decoration: none;
+	background-image: linear-gradient(
+		center top,
+		#35cffa 0%,
+		#028db4 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #35cffa),
+		color-stop(1, #028db4)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#35cffa 0%,
+		#028db4 100%
+	);
+}
+
+#html5hanabi #layoutIntro ul li.enter{
+	border: 1px solid #004058;
+	border-left: none;
+	position: relative;
+	border-radius: 0 13px 13px 0;
+	background-color: #0f93bd;
+	background-image: linear-gradient(
+		center top,
+		#03426f 0%,
+		#1f5d8a 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #03426f),
+		color-stop(1, #1f5d8a)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#03426f 0%,
+		#1f5d8a 100%
+	);
+}
+
+
+#html5hanabi #layoutIntro ul li.enter span.label{
+}
+
+#html5hanabi #layoutIntro ul li span.comingsoon{
+	font-size: 11px;
+	display: inline-block;
+	background: #0c345b;
+	padding: 2px 5px;
+}
+
+#html5hanabi  #eventTitle{
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	margin-left: -50%;
+	position: absolute;
+	top: -37%;
+	left: 0;
+}
+
+#html5hanabi  #eventTitle .note{
+	margin-bottom: 20px;
+	line-height: 1.8;
+}
+
+#html5hanabi  #eventTitle .listBrowser{
+	margin-bottom: 20px;
+	line-height: 1.8;
+}
+
+#html5hanabi  #eventTitle .listBrowser li {
+	display: inline-block;
+}
+
+#html5hanabi  #eventTitle .listBrowser li a{
+	display: inline-block;
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0 4px;
+	color: #fff;
+}
+
+#html5hanabi  #eventTitle .listBrowser li a:hover{
+	opacity: .8;
+}
+
+#boxAbout{
+	display: none;
+	border: 1px solid #204152;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	width: 470px;
+	margin: 50px auto 0;
+	padding: 20px 0 60px 0;
+	box-shadow: 0 1px 8px #000;
+	position: relative;
+	z-index: 100;
+	background-color: #000;
+	background-image: linear-gradient(
+		center top,
+		#041924 0%,
+		#000000 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #041924),
+		color-stop(1, #000000)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#041924 0%,
+		#000000 100%
+	);
+}
+
+#boxAbout .note{
+	margin-bottom: 15px;
+}
+
+#boxAbout .btnBase{
+	padding: 10px 0;
+	width: 250px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+#boxAbout .btnBase:hover{
+	text-decoration: none;
+}
+
+#aboutClose{
+	cursor: pointer;
+	line-height: 1;
+}
+
+#aboutClose .button{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* hanabiArea
+----------------------------------- */
+#hanabiArea{
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 180px;
+	min-height: 760px;
+	min-width: 950px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#sky{
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	background: url(img/background.jpg) 50% 100% no-repeat, url(img/bg_kamakura_02.jpg) 50% 100% repeat-x #000;
+	height: 200px;
+	width: 100%;
+}
+
+#edge{
+	height: 15px;
+	width: 100%;
+	position: absolute;
+	bottom: 180px;
+	left: 0;
+	background: url(img/edge.png) 0 0 repeat-x;
+}
+
+#hanabiCanvas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+}
+
+#hanabiCanvas > div{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#hanabiCanvas > div .hanabiItem{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+}
+
+#hanabiCanvas > div .hanabiItem p.author{
+	opacity: 0;
+	color: #666;
+	text-align: center;
+	width: 100%;
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	position: absolute;
+	font-size: 9px;
+	bottom: 30%;
+	left: 0;
+	line-height: 1;
+}
+
+#hanabiCanvas > div .hanabiItem p.author span{
+	display: inline-block;
+	padding: 8px 10px;
+	background: rgba(0,0,0,.7);
+	border-radius: 2px;
+	border: 1px solid #1e1e1e;
+}
+
+#hanabiCanvas > div .hanabiItem p.author b{
+	font-weight: normal;
+	color: #fff;
+}
+
+#hanabiCanvas > div .hanabiItem:hover p.author{
+  -webkit-animation-duration: .12s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: fadeIn;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  0%{
+	  opacity: 0;
+    }
+  100% {
+	  opacity: 1;
+  }
+}
+
+#hanabiCanvas iframe,
+#hanabiCanvas a{
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 450px;
+	height: 450px;
+}
+
+#hanabiCanvas iframe{
+	background: #000;
+}
+
+
+#html5hanabi textarea{
+	display: none;
+}
+
+#html5hanabi #muteController {
+	font-size: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	background: rgba(0,0,0,.4);
+	padding: 0 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#html5hanabi #muteController.on .off {
+	color: #666;
+}
+
+#html5hanabi #muteController.on:hover .off {
+	color: #999;
+}
+
+#html5hanabi #muteController.on .on {
+	color: #fff;
+}
+
+#html5hanabi #muteController.off .on {
+	color: #666;
+}
+
+#html5hanabi #muteController.off:hover .on {
+	color: #999;
+}
+
+#html5hanabi #muteController.off .off {
+	color: #fff;
+}
+
+#hanabiCanvas > div {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+}
+
+/* layout1
+----------------------------------- */
+#hanabiCanvas .layout1 .fw1{
+	top: 0;
+	left: 0;
+	margin: -375px 0 0 -50%;
+}
+
+#hanabiCanvas .layout1 .fw1:not(:target){
+	margin: -375px 0 0 -50%¥9;
+}
+
+#hanabiCanvas .layout1 .fw1 a{
+	width: 750px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -375px 0 0 -375px;
+	height: 750px;
+}
+
+#hanabiCanvas > div.layout1 .hanabiItem{
+	width: 100%;
+	height: 750px;
+}
+
+#hanabiCanvas > div.layout1 .hanabiItem iframe{
+	width: 100%;
+	height: 750px;
+}
+
+#hanabiCanvas > div.layout1 .hanabiItem p.author{
+	bottom: 30%;
+}
+
+/* layout2
+----------------------------------- */
+#hanabiCanvas .layout2 .fw1{
+	top: 0;
+	left: -23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout2 .fw2{
+	top: 0;
+	left: 23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+/* layout3
+----------------------------------- */
+#hanabiCanvas .layout3 .fw1{
+	top: 10%;
+	left: -23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout3 .fw2{
+	top: -10%;
+	left: 23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+/* layout4
+----------------------------------- */
+#hanabiCanvas .layout4 .fw1{
+	top: -10%;
+	left: -23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout4 .fw2{
+	top: 10%;
+	left: 23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+/* layout5
+----------------------------------- */
+#hanabiCanvas .layout5 .fw1{
+	top: -24%;
+	left: 0;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout5 .fw2{
+	top: 18%;
+	left: 23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout5 .fw3{
+	top: 18%;
+	left: -23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas > div.layout5 .hanabiItem.fw2 p.author,
+#hanabiCanvas > div.layout5 .hanabiItem.fw3 p.author{
+	bottom: 40%;
+}
+
+/* layout6
+----------------------------------- */
+#hanabiCanvas .layout6 .fw1{
+	top: 18%;
+	left: 0;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout6 .fw2{
+	top: -24%;
+	left: 23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas .layout6 .fw3{
+	top: -24%;
+	left: -23.5%;
+	margin: -225px 0 0 -225px;
+}
+
+#hanabiCanvas > div.layout6 .hanabiItem.fw1 p.author{
+	bottom: 40%;
+}
+p.author {
+	display:hidden;
+}

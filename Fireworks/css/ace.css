@@ -1,0 +1,570 @@
+.ace_editor {
+  position: absolute;
+  overflow: hidden;
+
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+  font-size: 12px;  
+}
+
+.ace_scroller {
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ace_gutter {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.ace_editor .ace_sb {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  right: 0;
+}
+
+.ace_editor .ace_sb div {
+  position: absolute;
+  width: 1px;
+  left: 0px;
+}
+
+.ace_editor .ace_print_margin {
+  position: absolute;
+  height: 100%;
+}
+
+.ace_editor textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  background: transparent;
+  position: fixed;
+  height: 1.1em;
+  width: 1em;
+}
+
+.ace_layer {
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;  
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.ace_text-layer {
+  font-family: Monaco, "Courier New", monospace;
+  width: auto;
+}
+
+.ace_cursor-layer {
+  cursor: text;
+}
+
+.ace_cursor {
+  z-index: 3;
+  position: absolute;
+}
+
+.ace_line {
+  white-space: nowrap;
+}
+
+.ace_marker-layer {
+}
+
+.ace_marker-layer .ace_step {
+  position: absolute;
+  z-index: 2;
+}
+
+.ace_marker-layer .ace_selection {
+  position: absolute;
+  z-index: 3;
+}
+
+.ace_marker-layer .ace_bracket {
+  position: absolute;
+  z-index: 4;
+}
+
+.ace_marker-layer .ace_active_line {
+  position: absolute;
+  z-index: 1;
+}.ace-jsdoit .ace_editor {
+  border: 2px solid rgb(159, 159, 159);
+}
+
+.ace_cjk {
+  display: inline-block;
+  text-align: center;
+}
+
+.ace-jsdoit .ace_editor.ace_focus {
+  border: 2px solid white;
+}
+
+.ace-jsdoit .ace_gutter-layer {
+  width: 100%;
+  text-align: right;
+}
+
+.ace-jsdoit .ace_gutter-layer .ace_gutter-cell {
+  padding-right: 6px;
+}
+
+.ace-jsdoit .ace_line .ace_invisible {
+}
+
+.ace-jsdoit .ace_line .ace_keyword {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_buildin {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_language {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_library {
+}
+
+.ace-jsdoit .ace_line .ace_invalid {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_function {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_constant {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_type,
+.ace-jsdoit .ace_line .ace_support.ace_class {
+}
+
+.ace-jsdoit .ace_line .ace_variable {
+}
+
+.ace-jsdoit .ace_line .ace_xml_pe {
+}
+
+.ace-jsdoit .ace_marker-layer .ace_step {
+  background: rgb(252, 255, 0);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_stack {
+  background: rgb(164, 229, 101);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
+
+.ace-jsdoit .ace_line .ace_comment {
+  color: #18C000 !important;
+}
+
+.ace-jsdoit .ace_line .ace_comment.ace_doc {
+  color: #18C000 !important;
+}
+
+.ace-jsdoit .ace_line .ace_comment.ace_doc.ace_tag {
+  color: #18C000 !important;
+}
+
+.ace-jsdoit .ace_line .ace_keyword.ace_operator {
+  color: #444444 !important;
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_numeric {
+  color: #309060 !important;
+}
+
+.ace-jsdoit .ace_marker-layer .ace_selection {
+  background: white;
+}
+
+.ace-jsdoit .ace_gutter {
+  width: 34px;
+  overflow : hidden;
+  font-size: 9pt;
+  line-height: 1.2;
+}
+
+.ace_text-layer {
+  cursor: text;
+  color: #aaa;
+}
+
+.ace_text-layer .ace_identifier {
+  color: #309060 !important;
+}
+
+.ace_text-layer .ace_string {
+  color: #A9262E !important;
+}
+
+.ace-jsdoit .ace_string.ace_regex {
+  color: #B9868E !important;
+}
+
+.ace_cursor {
+  background: white;
+  width: 2px !important;
+  margin-top: 2px;
+}
+
+.ace-jsdoit .ace_cursor.ace_overwrite {
+  border-left: 0px;
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.autocomplete_listbox {
+	display: none;
+	overflow-y: auto;
+	width: 200px;
+	height: 190px;
+	position: absolute;
+	background-color: white;
+	z-index: 100;
+	font-family: "Menlo","Monaco","Courier New",monospace;
+	font-size: 12px;
+}
+
+.autocomplete_listbox li {
+	border-top: dotted 1px;
+	padding-left: 0.5em;
+	margin: -3px 0;
+}
+.autocomplete_listbox li {
+	background-color: white;
+	color: black;
+}
+.autocomplete_listbox.selected li.first_1, 
+.autocomplete_listbox.selected li.first_2 {
+	background-color: white;
+	color: black;
+}
+.autocomplete_listbox li.active {
+	background-color: #0A256A !important;
+	color: white !important;
+}
+
+
+
+/* from ace cloud theme
+---------------------------------------------- */
+
+.ace-jsdoit .ace_editor {
+  border: 2px solid rgb(159, 159, 159);
+}
+
+.ace-jsdoit .ace_editor.ace_focus {
+  border: 2px solid #327fbd;
+}
+
+.ace-jsdoit .ace_gutter {
+  width: 50px;
+  background: #e8e8e8;
+  color: #333;
+  overflow : hidden;
+}
+
+.ace-jsdoit .ace_gutter-layer {
+  width: 100%;
+  text-align: right;
+}
+
+.ace-jsdoit .ace_gutter-layer .ace_gutter-cell {
+  padding-right: 6px;
+}
+
+.ace-jsdoit .ace_print_margin {
+  width: 1px;
+  background: #e8e8e8;
+}
+
+.ace-jsdoit .ace_scroller {
+  background-color: #F9F9F9;
+}
+
+.ace-jsdoit .ace_text-layer {
+  cursor: text;
+  color: #080808;
+}
+
+.ace-jsdoit .ace_cursor {
+  border-left: 1.5px solid rgba(0,0,0, .5);
+}
+
+.ace-jsdoit .ace_cursor.ace_overwrite {
+  border-left: 0px;
+  border-bottom: 1px solid #000000;
+}
+ 
+.ace-jsdoit .ace_marker-layer .ace_selection {
+  background: rgba(39, 95, 255, 0.30);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_step {
+  background: rgb(198, 219, 174);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgba(75, 75, 126, 0.50);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_active_line {
+  background: rgba(36, 99, 180, 0.12);
+}
+
+       
+.ace-jsdoit .ace_invisible {
+  color: rgba(75, 75, 126, 0.50);
+}
+
+.ace-jsdoit .ace_keyword {
+  color:#794938;
+}
+
+.ace-jsdoit .ace_keyword.ace_operator {
+  
+}
+
+.ace-jsdoit .ace_constant {
+  color:#811F24;
+}
+
+.ace-jsdoit .ace_constant.ace_language {
+  
+}
+
+.ace-jsdoit .ace_constant.ace_library {
+  
+}
+
+.ace-jsdoit .ace_constant.ace_numeric {
+  
+}
+
+.ace-jsdoit .ace_invalid {
+  
+}
+
+.ace-jsdoit .ace_invalid.ace_illegal {
+  text-decoration:underline;
+font-style:italic;
+color:#F8F8F8;
+background-color:#B52A1D;
+}
+
+.ace-jsdoit .ace_invalid.ace_deprecated {
+  text-decoration:underline;
+font-style:italic;
+color:#B52A1D;
+}
+
+.ace-jsdoit .ace_support {
+  color:#691C97;
+}
+
+.ace-jsdoit .ace_support.ace_function {
+  color:#693A17;
+}
+
+.ace-jsdoit .ace_function.ace_buildin {
+  
+}
+
+.ace-jsdoit .ace_string {
+  color:#0B6125;
+}
+
+.ace-jsdoit .ace_string.ace_regexp {
+  color:#CF5628;
+}
+
+.ace-jsdoit .ace_comment {
+  font-style:italic;
+color:#5A525F;
+}
+
+.ace-jsdoit .ace_comment.ace_doc {
+  
+}
+
+.ace-jsdoit .ace_comment.ace_doc.ace_tag {
+  
+}
+
+.ace-jsdoit .ace_variable {
+  color:#234A97;
+}
+
+.ace-jsdoit .ace_variable.ace_language {
+  
+}
+
+.ace-jsdoit .ace_xml_pe {
+  
+}
+
+
+/* from ace jsdo.css
+---------------------------------------------- */
+
+
+.ace-jsdoit .ace_editor {
+  border: 2px solid rgb(159, 159, 159);
+}
+
+.ace-jsdoit .ace_editor.ace_focus {
+  border: 2px solid white;
+}
+
+.ace-jsdoit .ace_gutter-layer {
+  width: 100%;
+  text-align: right;
+}
+
+.ace-jsdoit .ace_gutter-layer .ace_gutter-cell {
+  padding-right: 6px;
+}
+
+.ace-jsdoit .ace_cursor {
+  border-left: 2px solid black;
+}
+
+.ace-jsdoit .ace_cursor.ace_overwrite {
+  border-left: 0px;
+  border-bottom: 1px solid black;
+}
+        
+.ace-jsdoit .ace_line .ace_invisible {
+}
+
+.ace-jsdoit .ace_line .ace_keyword {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_buildin {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_language {
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_library {
+}
+
+.ace-jsdoit .ace_line .ace_invalid {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_function {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_constant {
+}
+
+.ace-jsdoit .ace_line .ace_support.ace_type,
+.ace-jsdoit .ace_line .ace_support.ace_class {
+}
+
+.ace-jsdoit .ace_line .ace_variable {
+}
+
+.ace-jsdoit .ace_line .ace_xml_pe {
+}
+
+.ace-jsdoit .ace_marker-layer .ace_step {
+  background: rgb(252, 255, 0);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_stack {
+  background: rgb(164, 229, 101);
+}
+
+.ace-jsdoit .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
+
+.ace-jsdoit .ace_line .ace_comment {
+  color: #b8ff84;
+}
+
+.ace-jsdoit .ace_line .ace_comment.ace_doc {
+  color: #b8ff84;
+}
+
+.ace-jsdoit .ace_line .ace_comment.ace_doc.ace_tag {
+  color: #b8ff84;
+}
+
+.ace-jsdoit .ace_line .ace_keyword.ace_operator {
+  color: #aaa;
+}
+
+.ace-jsdoit .ace_line .ace_constant.ace_numeric {
+  color: #8edfae;
+}
+
+
+.ace-jsdoit .ace_gutter {
+  width: 34px;
+  overflow : hidden;
+  font-size: 9pt;
+  line-height: 1.2;
+}
+
+.ace_text-layer {
+  cursor: text;
+  color: #aaa;
+}
+
+.ace_text-layer .ace_identifier {
+  color: #ade0da;
+}
+
+.ace_text-layer .ace_string {
+  color: #d9a6ae;
+}
+
+.ace-jsdoit .ace_string.ace_regex {
+  color: #d9a6ae;
+}
+
+.ace_cursor {
+  background: white;
+  width: 0.5mm !important;
+  border-left: 0.5mm solid rgba(0, 0, 0, .7) !important
+}
